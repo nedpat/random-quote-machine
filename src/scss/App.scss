@@ -1,0 +1,98 @@
+$initialColor: rgb(130, 206, 242);
+
+body {
+  background-color: $initialColor;
+}
+.btn-primary {
+  background-color: $initialColor;
+  color: white;
+  border-color: $initialColor;
+}
+.btn-primary:focus {
+  border-color: #fff;
+  box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+  border-color: #fff;
+}
+#quote-box {
+  width: 60%;
+  opacity: 0.9;
+}
+.quote {
+  min-height: 200px;
+}
+.quotation {
+  display: block;
+  color: grey;
+  margin-bottom: 10px;
+}
+#tweet-quote,
+#github-link {
+  color: #50abf1;
+}
+#tweet-quote:hover,
+#github-link:hover {
+  color: #2693e6;
+  transition: color 1s;
+}
+.icon {
+  margin-left: 15px;
+}
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .card {
+    margin: 10px;
+  }
+}
