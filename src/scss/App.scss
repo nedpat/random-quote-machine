@@ -3,6 +3,9 @@ $initialColor: rgb(130, 206, 242);
 body {
   background-color: $initialColor;
 }
+.p-5 {
+  padding: 1rem !important;
+}
 .btn-primary {
   background-color: $initialColor;
   color: white;
@@ -18,7 +21,7 @@ body {
   border-color: #fff;
 }
 #quote-box {
-  width: 60%;
+  width: 100%;
   opacity: 0.9;
 }
 .quote {
@@ -94,5 +97,11 @@ body {
 @media (min-width: 768px) {
   .card {
     margin: 10px;
+  }
+  #quote-box {
+    width: 60%;
+  }
+  .p-5 {
+    padding: 3rem !important;
   }
 }
