@@ -8,7 +8,7 @@ The Random Quote Machine is a simple React application developed for the FreeCod
 
 - Fetches and displays random quotes and their author's name
 
-- Tweet the current quote to Twitter
+- Tweets the current quote to Twitter
 
 - Loads random images from picsum.photos and displays them as a background
 

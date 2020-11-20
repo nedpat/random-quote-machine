@@ -75,6 +75,7 @@ export default class App extends React.Component {
 
   render() {
     const quoteBtnText = "New quote";
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${this.state.quote} ${this.state.author}`;
 
     return (
       <div className="app d-flex min-vh-100 align-items-center justify-content-center container">
@@ -101,7 +102,7 @@ export default class App extends React.Component {
               </div>
               <div>
                 <a
-                  href="https://twitter.com/intent/tweet"
+                  href={twitterUrl}
                   target="_blank"
                   rel="noreferrer"
                   id="tweet-quote"
